@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Css Files -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Boxicons Files -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start Coding -->
+    <div class="crud">
+      <div class="sittings-container">
+        <div class="btn"><i class="bx bx-cog bx bx-spin"></i></div>
+        <div class="sitting-content">
+          <div class="option-box">
+            <!-- just option -->
+            <p>We ll' add some fueatures in the future</p>
+            <input type="datetime" style="width: max-content" />
+          </div>
+        </div>
+      </div>
+      <div class="head">
+        <h3>Crud</h3>
+        <p>Its Build For Managed Lebrary , Pharmacy,Market Stors</p>
+        <br />
+        <a
+          accesskey="111"
+          href="https://65e6d6622cb5b7671763a07c--benevolent-quokka-0e564b.netlify.app/"
+          >About Us</a
+        >
+      </div>
+      <div class="inputs">
+        <input type="text" placeholder="Title..." id="title" />
+        <div class="Price">
+          <input
+            type="number"
+            placeholder="Price"
+            id="price"
+            onkeyup="getTotal ()"
+          />
+          <input
+            type="number"
+            placeholder="taxis"
+            id="taxis"
+            onkeyup="getTotal ()"
+          />
+          <input
+            type="number"
+            placeholder="ads"
+            id="ads"
+            onkeyup="getTotal ()"
+          />
+          <input
+            type="number"
+            placeholder="discount"
+            id="discount"
+            onkeyup="getTotal ()"
+          />
+          <small id="total"></small>
+        </div>
+        <input type="number" placeholder="Count" id="count" max="100" />
+        <input type="text" placeholder="Category" id="category" />
+        <button id="submit">Create</button>
+        <div class="search-block">
+          <input type="text" placeholder="Search..." id="search" />
+          <div class="btns-search">
+            <button id="searchByTitle">Search By Title</button>
+            <button id="searchByCategory">Search By Category</button>
+          </div>
+        </div>
+      </div>
+      <div class="outputs">
+        <table>
+          <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>price</th>
+            <th>taxis</th>
+            <th>ads</th>
+            <th>discount</th>
+            <th>total</th>
+            <th>category</th>
+            <th>update</th>
+            <th>delete</th>
+          </tr>
+          <div class="deletAll"></div>
+          <tbody class="tbody">
+            <!--  <tr>
+                                <td>1</td>
+                                <td>fdgd</td>
+                                <td>6515</td>
+                                <td>64</td>
+                                <td>45</td>
+                                <td>75</td>
+                                <td>757</td>
+                                <td>phone</td>
+                                <td><button>Update</button></td>
+                                <td><button>Delete</button></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>fdgd</td>
+                                <td>6515</td>
+                                <td>64</td>
+                                <td>45</td>
+                                <td>75</td>
+                                <td>757</td>
+                                <td>phone</td>
+                                <td><button>Update</button></td>
+                                <td><button>Delete</button></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>fdgd</td>
+                                <td>6515</td>
+                                <td>64</td>
+                                <td>45</td>
+                                <td>75</td>
+                                <td>757</td>
+                                <td>phone</td>
+                                <td><button>Update</button></td>
+                                <td><button>Delete</button></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>fdgd</td>
+                                <td>6515</td>
+                                <td>64</td>
+                                <td>45</td>
+                                <td>75</td>
+                                <td>757</td>
+                                <td>phone</td>
+                                <td><button>Update</button></td>
+                                <td><button>Delete</button></td>
+                            </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

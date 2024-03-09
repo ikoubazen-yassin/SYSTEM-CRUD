@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+input,
+button {
+  border-radius: 0px !important;
+}
+body {
+  font-family: system-ui;
+  background-color: #333;
+  color: #ffff;
+}
+.crud {
+  width: 80%;
+  margin: 40px auto;
+}
+.head {
+  text-align: center;
+  margin: 15px 0;
+  text-transform: uppercase;
+}
+
+.head h3 {
+  line-height: 1.8;
+  margin: 10px 0;
+  font-size: 2rem;
+  letter-spacing: 6px;
+}
+.head a {
+  background-color: #f54545;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 40px;
+  margin: 20px 0;
+  font-weight: bold;
+  transition: 0.4s all;
+}
+.head a:hover {
+  opacity: 0.9;
+  letter-spacing: 1px;
+}
+
+input {
+  width: 100%;
+  height: 30px;
+  border: 0;
+  outline: 0;
+  margin: 5px;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: #111;
+  color: #ffff;
+  caret-color: aliceblue;
+  transition: 0.3s;
+}
+input:focus {
+  transform: scale(1.06);
+  background-color: #000;
+}
+.inputs .Price input {
+  width: 20%;
+}
+.inputs .Price #total {
+  background-color: red;
+  padding: 4px 6px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+.inputs .Price #total::before {
+  content: "Total: ";
+}
+button {
+  width: 100%;
+  height: 30px;
+  margin: 10px 0;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background-color: blueviolet;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s all;
+  font-weight: bold;
+}
+button:hover {
+  letter-spacing: 1px;
+  background-color: rgb(66, 14, 114);
+}
+.btns-search {
+  display: flex;
+  justify-content: space-between;
+}
+.btns-search button {
+  width: 45%;
+}
+table {
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+}
+
+th {
+  text-transform: uppercase;
+}
+th,
+td {
+  padding: 10px;
+}
+.sittings-container {
+  position: fixed;
+  left: -220px;
+  top: 0;
+  width: 220px;
+  height: 100vh;
+  transition: 0.3s;
+  background-color: #fffffff5;
+}
+.sittings-container.active {
+  left: 0;
+}
+.sittings-container .btn {
+  position: absolute;
+  cursor: pointer;
+  right: -35px;
+  top: 150px;
+}
+.sittings-container .option-box p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(226, 43, 43);
+  font-size: 28px;
+  font-weight: 600;
+}
+.sittings-container .btn i {
+  font-size: 2rem;
+  color: blueviolet;
+}
+
+/* Popup Login With Java script*/
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.61);
+}
+.form-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+  background-color: #343434c0;
+  border-radius: 5px;
+
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.19);
+}
+.form-container h3 {
+  color: blueviolet;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.61);
+}

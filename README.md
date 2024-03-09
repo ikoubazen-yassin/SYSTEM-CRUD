@@ -38,7 +38,7 @@ Open the project directory in your preferred code editor.
 Explore the codebase and familiarize yourself with the project structure.
 Install any necessary dependencies by running npm install or yarn install.
 Start the development server using npm start or yarn start.
-Access the application in your web browser at http://localhost:3000.
+Access the application in your web browser at [http://localhost:3000.](https://beautiful-melba-ed33da.netlify.app/)
 Usage
 Our system management products are designed to be intuitive and easy to use. Simply log in to the application using your credentials, and you'll be presented with a comprehensive set of tools for managing your system.
 
